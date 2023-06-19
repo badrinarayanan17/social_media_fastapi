@@ -107,7 +107,7 @@ def delete_post(id:int,db: Session = Depends(get_db),current_user: int = Depends
 
 # Updating posts
 
-@router .put("/{id}")
+@router.put("/{id}",response_model=List[schemas.PostResponse])
 def update_posts(id:int,post_update:schemas.PostCreate,db: Session = Depends(get_db),current_user: int = Depends(oauth2.get_current_user)):
     # cursor.execute("""UPDATE posts SET title = %s,content = %s,published = %s WHERE id = %s RETURNING * """,(post.title,post.content,post.published,str(id)))
     # updated_post = cursor.fetchone()
