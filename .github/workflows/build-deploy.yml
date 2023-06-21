@@ -4,7 +4,7 @@ on : [push,pull_request]
 
 jobs:
   job1:
-    runs-on: windows-latest
+    runs-on: checkout@v2
     steps:
      - name: pulling git repository
      - uses: actions/checkout@v2
