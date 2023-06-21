@@ -9,4 +9,4 @@ jobs:
      - name: pulling git repository
      - uses: actions/checkout@v3
      - name: "Say hello to badri"
-       run: echo "Hello Badri Narayanan"
+       run : echo "Hello Badri Narayanan"
