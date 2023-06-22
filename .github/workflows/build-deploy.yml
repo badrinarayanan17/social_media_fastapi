@@ -4,7 +4,7 @@ on : [push,pull_request]
 
 jobs:
   job1:
-    runs-on: checkout@v2
+    runs-on: ubuntu-latest
     steps:
      - name: pulling git repository
        uses: actions/checkout@v2
