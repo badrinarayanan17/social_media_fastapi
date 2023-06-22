@@ -8,5 +8,12 @@ jobs:
     steps:
      - name: pulling git repository
        uses: actions/checkout@v2
-     - name: Say hello to badri
-       run : echo "Hello Badri Narayanan"
+     - name: Install python version 3.9
+       uses: actions/setup-python@v2
+       with:
+          python-version:"3.9" 
+     - name: update pip
+       run: python -m pip install --upgrade pip
+     - name: Install all dependencies
+       run: pip install -r requirements.txt
+         
