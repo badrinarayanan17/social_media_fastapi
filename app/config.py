@@ -4,12 +4,12 @@ class Settings(BaseSettings):
     
     database_hostname : str
     database_port : str
-    db_password_secret : str
+    database_password : str
     database_name : str
-    db_username_secret : str
+    database_username : str
     secret_key : str
     algorithm : str
-    access_token_secret : int
+    access_token_expire_minutes : int
     
     class Config:
         env_file = ".env"
