@@ -9,12 +9,12 @@ jobs:
     env:
       DATABASE_HOSTNAME : ${{secrets.DATABASE_HOSTNAME}}
       DATABASE_PORT : ${{secrets.DATABASE_PORT}}
-      DATABASE_PASSWORD_SECRET : ${{secrets.DB_PASSWORD_SECRET}}
+      DATABASE_PASSWORD : ${{secrets.DB_PASSWORD_SECRET}}
       DATABASE_NAME : ${{secrets.DATABASE_NAME}}
-      DB_USERNAME_SECRET : ${{secrets.DB_USERNAME_SECRET}}
+      DATABASE_USERNAME : ${{secrets.DB_USERNAME_SECRET}}
       SECRET_KEY : ${{secrets.SECRET_KEY}}
       ALGORITHM : ${{secrets.ALGORITHM}}
-      ACCESS_TOKEN_SECRET : ${{secrets.ACCESS_TOKEN_SECRET}}
+      ACCESS_TOKEN_EXPIRE_MINUTES  : ${{secrets.ACCESS_TOKEN_SECRET}}
     runs-on: ubuntu-latest
     steps:
      - name: pulling git repository
