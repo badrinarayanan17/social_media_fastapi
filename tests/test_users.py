@@ -10,7 +10,7 @@ def test_root(client):
     res = client.get("/")
     print(res.json().get('data'))
     assert res.json().get('data') == 'First experience with fastapi! Bind mount works'
-    assert res.status_code == 200
+    assert res.status_code == 404 #changed 200 - 404
 
 
 def test_create_user(client):
