@@ -15,7 +15,7 @@ app = FastAPI()
 
 @app.get("/")   
 def root():
-    return {"data":"First experience with fastapi"}
+    return {"data":"First experience with fastapi! Bind mount works"}
 
 origins = ["*"]
 
