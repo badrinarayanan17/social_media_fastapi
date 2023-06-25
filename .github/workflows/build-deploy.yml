@@ -71,6 +71,6 @@ jobs:
     needs: [Build]
 
     steps:
-      -name: Deploying Some Stuffs
-       echo "Deploying application stuffs"
+    - name: Deploying Application Stuffs
+      run: echo "Deploying the Application"
 
