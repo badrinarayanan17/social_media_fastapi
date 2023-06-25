@@ -9,7 +9,7 @@ def test_root(client):
 
     res = client.get("/")
     print(res.json().get('data'))
-    assert res.json().get('data') == 'First experience with fastapi'
+    assert res.json().get('data') == 'First experience with fastapi! Bind mount works'
     assert res.status_code == 200
 
 
